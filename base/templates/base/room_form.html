@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+{% block content %}
+<!--wrapping the ain page using div (form is for sending and posting data-->
+<div>
+    <form method="post" action="">
+        {% {% csrf_token %}%}
+        {{ form.as_p}}
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+
+</div>
+
+
+{% endblock content %}
